@@ -1,0 +1,147 @@
+/* KDP-optimized eBook stylesheet */
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.6;
+  margin: 1em;
+  color: #1a1a1a;
+}
+
+h1 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-top: 2em;
+  margin-bottom: 0.5em;
+  color: #0C1222;
+  page-break-before: always;
+  border-bottom: 2px solid #D4A24E;
+  padding-bottom: 0.3em;
+}
+
+h1:first-of-type {
+  page-break-before: avoid;
+}
+
+h2 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 0.4em;
+  color: #1a2a4a;
+}
+
+h3 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.15em;
+  font-weight: 600;
+  margin-top: 1.2em;
+  margin-bottom: 0.3em;
+  color: #2a3a5a;
+}
+
+p {
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+  text-align: left;
+}
+
+blockquote {
+  margin: 1em 0;
+  padding: 0.8em 1em;
+  border-left: 3px solid #D4A24E;
+  background-color: #f8f6f0;
+  font-style: italic;
+  color: #333;
+}
+
+blockquote p {
+  margin: 0.2em 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.9em;
+}
+
+th {
+  background-color: #0C1222;
+  color: #F2F4F8;
+  padding: 0.5em 0.8em;
+  text-align: left;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.4em 0.8em;
+  border-bottom: 1px solid #ddd;
+  vertical-align: top;
+}
+
+tr:nth-child(even) td {
+  background-color: #f9f9f9;
+}
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f0f0f0;
+  padding: 0.15em 0.3em;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: #f4f4f4;
+  padding: 1em;
+  border-left: 3px solid #4B7BF5;
+  overflow-x: auto;
+  font-size: 0.85em;
+  line-height: 1.4;
+  margin: 1em 0;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+}
+
+strong {
+  font-weight: 700;
+  color: #0C1222;
+}
+
+em {
+  font-style: italic;
+}
+
+ul, ol {
+  margin: 0.5em 0;
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.3em;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #D4A24E;
+  margin: 2em 0;
+}
+
+a {
+  color: #4B7BF5;
+  text-decoration: none;
+}
+
+/* Title page styling */
+h1:first-of-type {
+  font-size: 2.2em;
+  text-align: center;
+  border-bottom: none;
+  margin-top: 3em;
+}

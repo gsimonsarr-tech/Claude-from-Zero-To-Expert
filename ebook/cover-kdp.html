@@ -1,0 +1,315 @@
+<title>Claude From Zero To Expert — Cover</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  :root {
+    --bg-deep: #070D18;
+    --bg-mid: #0F1B2D;
+    --gold: #E8B84A;
+    --gold-dark: #C4922E;
+    --blue: #4B7BF5;
+    --blue-dim: #2A4A7F;
+    --text-primary: #F2F4F8;
+    --text-secondary: #7B8DA4;
+    --text-muted: #5A7090;
+    --surface: #111D30;
+    --border: #1E3050;
+  }
+
+  body {
+    background: var(--bg-deep);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  .cover {
+    width: 1600px;
+    height: 2560px;
+    background: linear-gradient(160deg, var(--bg-mid) 0%, var(--bg-deep) 100%);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Subtle grid */
+  .cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:
+      linear-gradient(90deg, rgba(75,123,245,0.03) 1px, transparent 1px),
+      linear-gradient(rgba(75,123,245,0.03) 1px, transparent 1px);
+    background-size: 400px 640px;
+  }
+
+  /* Top glow */
+  .cover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 800px;
+    background: linear-gradient(180deg, rgba(75,123,245,0.12) 0%, transparent 100%);
+    pointer-events: none;
+  }
+
+  .top-line, .bottom-line {
+    position: absolute;
+    left: 120px;
+    right: 120px;
+    height: 2px;
+    background: var(--blue);
+    opacity: 0.2;
+  }
+  .top-line { top: 120px; }
+  .bottom-line { bottom: 60px; }
+
+  .eyebrow {
+    margin-top: 280px;
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 12px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+  }
+
+  .title-main {
+    margin-top: 100px;
+    font-size: 220px;
+    font-weight: 800;
+    letter-spacing: 18px;
+    color: var(--text-primary);
+    position: relative;
+    z-index: 1;
+    text-shadow: 0 0 80px rgba(75,123,245,0.15);
+  }
+
+  .gold-bar {
+    width: 440px;
+    height: 5px;
+    background: linear-gradient(90deg, var(--gold-dark), var(--gold), var(--gold-dark));
+    border-radius: 3px;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .subtitle {
+    margin-top: 55px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .subtitle span {
+    display: block;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: 8px;
+    color: var(--gold);
+    line-height: 1.4;
+  }
+
+  /* Steps visualization */
+  .steps-container {
+    margin-top: 100px;
+    display: flex;
+    align-items: flex-end;
+    gap: 40px;
+    height: 560px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .step {
+    width: 132px;
+    border-radius: 6px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .step-label {
+    position: absolute;
+    top: -32px;
+    font-size: 22px;
+    font-weight: 500;
+    white-space: nowrap;
+  }
+
+  .step-bar {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .step:nth-child(1) .step-bar { height: 150px; background: linear-gradient(180deg, #2A4A7F, #1E3460); }
+  .step:nth-child(1) .step-label { color: #4A6A9F; }
+
+  .step:nth-child(2) .step-bar { height: 210px; background: linear-gradient(180deg, #2E5599, #244380); }
+  .step:nth-child(2) .step-label { color: #4A6A9F; }
+
+  .step:nth-child(3) .step-bar { height: 270px; background: linear-gradient(180deg, #3563B0, #2C529A); }
+  .step:nth-child(3) .step-label { color: #5580B8; }
+
+  .step:nth-child(4) .step-bar { height: 330px; background: linear-gradient(180deg, #3E72C4, #3461AD); }
+  .step:nth-child(4) .step-label { color: #5580B8; }
+
+  .step:nth-child(5) .step-bar { height: 390px; background: linear-gradient(180deg, #4880D4, #3D70C0); }
+  .step:nth-child(5) .step-label { color: #6690CC; }
+
+  .step:nth-child(6) .step-bar { height: 450px; background: linear-gradient(180deg, #5A90E0, #4E82D2); }
+  .step:nth-child(6) .step-label { color: #6690CC; }
+
+  .step:nth-child(7) .step-bar {
+    height: 500px;
+    background: linear-gradient(180deg, #D4A24E, #B8882E);
+    box-shadow: 0 0 30px rgba(212,162,78,0.3);
+  }
+  .step:nth-child(7) .step-label { color: var(--gold); font-weight: 600; }
+
+  .divider {
+    width: calc(100% - 240px);
+    height: 1px;
+    background: var(--blue);
+    opacity: 0.15;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .features {
+    margin-top: 50px;
+    text-align: center;
+    color: #8AA0C0;
+    font-size: 34px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+  }
+
+  .description-box {
+    margin-top: 50px;
+    width: 1200px;
+    padding: 45px 60px;
+    background: var(--surface);
+    border: 1.5px solid var(--border);
+    border-radius: 12px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .description-box p {
+    color: #94A8C4;
+    font-size: 30px;
+    line-height: 1.7;
+  }
+  .description-box .note {
+    color: var(--text-secondary);
+    font-size: 26px;
+    font-style: italic;
+    margin-top: 15px;
+  }
+
+  .divider-bottom {
+    width: calc(100% - 240px);
+    height: 1px;
+    background: var(--blue);
+    opacity: 0.15;
+    margin-top: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .credit {
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+  }
+  .credit .label {
+    font-size: 28px;
+    color: var(--text-muted);
+    letter-spacing: 1px;
+  }
+  .credit .name {
+    font-size: 36px;
+    font-weight: 600;
+    color: #8AA0C0;
+    letter-spacing: 2px;
+    margin-top: 12px;
+  }
+
+  .year-badge {
+    margin-top: 35px;
+    padding: 10px 40px;
+    border: 1.5px solid rgba(232,184,74,0.5);
+    border-radius: 25px;
+    color: var(--gold);
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 6px;
+    opacity: 0.8;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 80px;
+  }
+</style>
+
+<div class="cover">
+  <div class="top-line"></div>
+
+  <div class="eyebrow">THE COMPLETE GUIDE</div>
+
+  <div class="title-main">CLAUDE</div>
+
+  <div class="gold-bar"></div>
+
+  <div class="subtitle">
+    <span>FROM ZERO</span>
+    <span>TO EXPERT</span>
+  </div>
+
+  <div class="steps-container">
+    <div class="step"><span class="step-label">Intro</span><div class="step-bar"></div></div>
+    <div class="step"><span class="step-label">Basics</span><div class="step-bar"></div></div>
+    <div class="step"><span class="step-label">Assist</span><div class="step-bar"></div></div>
+    <div class="step"><span class="step-label">Web</span><div class="step-bar"></div></div>
+    <div class="step"><span class="step-label">Apps</span><div class="step-bar"></div></div>
+    <div class="step"><span class="step-label">Auto</span><div class="step-bar"></div></div>
+    <div class="step"><span class="step-label">Expert</span><div class="step-bar"></div></div>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="features">
+    Prompt Engineering &nbsp;·&nbsp; Websites &nbsp;·&nbsp; Applications<br>
+    Automation &nbsp;·&nbsp; AI Agents &nbsp;·&nbsp; Business
+  </div>
+
+  <div class="description-box">
+    <p>The step-by-step guide to mastering Claude AI.<br>
+    Build websites, applications, and automations<br>
+    without writing a single line of code.</p>
+    <p class="note">No coding experience required.</p>
+  </div>
+
+  <div class="divider-bottom"></div>
+
+  <div class="credit">
+    <div class="label">Based on the training by</div>
+    <div class="name">YASSINE SDIRI</div>
+  </div>
+
+  <div class="year-badge">2026</div>
+
+  <div class="bottom-line"></div>
+</div>

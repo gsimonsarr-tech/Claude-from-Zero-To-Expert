@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2560" width="1600" height="2560">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#0F1B2D"/>
+      <stop offset="100%" stop-color="#070D18"/>
+    </linearGradient>
+    <linearGradient id="goldBar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#C4922E"/>
+      <stop offset="50%" stop-color="#E8B84A"/>
+      <stop offset="100%" stop-color="#C4922E"/>
+    </linearGradient>
+    <linearGradient id="blueGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4B7BF5" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4B7BF5" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stepGrad1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2A4A7F"/>
+      <stop offset="100%" stop-color="#1E3460"/>
+    </linearGradient>
+    <linearGradient id="stepGrad2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2E5599"/>
+      <stop offset="100%" stop-color="#244380"/>
+    </linearGradient>
+    <linearGradient id="stepGrad3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3563B0"/>
+      <stop offset="100%" stop-color="#2C529A"/>
+    </linearGradient>
+    <linearGradient id="stepGrad4" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#3E72C4"/>
+      <stop offset="100%" stop-color="#3461AD"/>
+    </linearGradient>
+    <linearGradient id="stepGrad5" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4880D4"/>
+      <stop offset="100%" stop-color="#3D70C0"/>
+    </linearGradient>
+    <linearGradient id="stepGrad6" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5A90E0"/>
+      <stop offset="100%" stop-color="#4E82D2"/>
+    </linearGradient>
+    <linearGradient id="stepGrad7" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#D4A24E"/>
+      <stop offset="100%" stop-color="#B8882E"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="20" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleGlow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="roundedStep">
+      <rect rx="4" ry="4" width="100%" height="100%"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1600" height="2560" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.03">
+    <line x1="400" y1="0" x2="400" y2="2560" stroke="#4B7BF5" stroke-width="1"/>
+    <line x1="800" y1="0" x2="800" y2="2560" stroke="#4B7BF5" stroke-width="1"/>
+    <line x1="1200" y1="0" x2="1200" y2="2560" stroke="#4B7BF5" stroke-width="1"/>
+    <line x1="0" y1="640" x2="1600" y2="640" stroke="#4B7BF5" stroke-width="1"/>
+    <line x1="0" y1="1280" x2="1600" y2="1280" stroke="#4B7BF5" stroke-width="1"/>
+    <line x1="0" y1="1920" x2="1600" y2="1920" stroke="#4B7BF5" stroke-width="1"/>
+  </g>
+
+  <!-- Top ambient glow -->
+  <rect x="0" y="0" width="1600" height="800" fill="url(#blueGlow)"/>
+
+  <!-- Top decorative line -->
+  <rect x="120" y="120" width="1360" height="2" fill="#4B7BF5" opacity="0.2"/>
+
+  <!-- Eyebrow: THE COMPLETE GUIDE -->
+  <text x="800" y="320" text-anchor="middle" fill="#7B8DA4" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="400" letter-spacing="12">THE COMPLETE GUIDE</text>
+
+  <!-- Main title: CLAUDE -->
+  <text x="800" y="580" text-anchor="middle" fill="#F2F4F8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="220" font-weight="800" letter-spacing="18">CLAUDE</text>
+
+  <!-- Gold accent bar under CLAUDE -->
+  <rect x="580" y="620" width="440" height="5" rx="2.5" fill="url(#goldBar)"/>
+
+  <!-- Subtitle: FROM ZERO TO EXPERT -->
+  <text x="800" y="740" text-anchor="middle" fill="#E8B84A" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="600" letter-spacing="8">FROM ZERO</text>
+  <text x="800" y="825" text-anchor="middle" fill="#E8B84A" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="64" font-weight="600" letter-spacing="8">TO EXPERT</text>
+
+  <!-- Ascending Steps Visual - 7 steps representing the journey -->
+  <!-- Each step is a rounded bar, ascending from left to right -->
+  <g transform="translate(200, 980)">
+    <!-- Step labels -->
+    <text x="86" y="-20" text-anchor="middle" fill="#4A6A9F" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500">Intro</text>
+    <text x="258" y="-20" text-anchor="middle" fill="#4A6A9F" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500">Basics</text>
+    <text x="430" y="-20" text-anchor="middle" fill="#5580B8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500">Assist</text>
+    <text x="602" y="-20" text-anchor="middle" fill="#5580B8" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500">Web</text>
+    <text x="774" y="-20" text-anchor="middle" fill="#6690CC" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500">Apps</text>
+    <text x="946" y="-20" text-anchor="middle" fill="#6690CC" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="500">Auto</text>
+    <text x="1118" y="-20" text-anchor="middle" fill="#D4A24E" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="22" font-weight="600">Expert</text>
+
+    <!-- Step 1 - shortest -->
+    <rect x="20" y="350" width="132" height="150" rx="6" fill="url(#stepGrad1)"/>
+    <!-- Step 2 -->
+    <rect x="192" y="290" width="132" height="210" rx="6" fill="url(#stepGrad2)"/>
+    <!-- Step 3 -->
+    <rect x="364" y="230" width="132" height="270" rx="6" fill="url(#stepGrad3)"/>
+    <!-- Step 4 -->
+    <rect x="536" y="170" width="132" height="330" rx="6" fill="url(#stepGrad4)"/>
+    <!-- Step 5 -->
+    <rect x="708" y="110" width="132" height="390" rx="6" fill="url(#stepGrad5)"/>
+    <!-- Step 6 -->
+    <rect x="880" y="50" width="132" height="450" rx="6" fill="url(#stepGrad6)"/>
+    <!-- Step 7 - tallest, gold/accent -->
+    <rect x="1052" y="0" width="132" height="500" rx="6" fill="url(#stepGrad7)" filter="url(#subtleGlow)"/>
+
+    <!-- Connecting line through steps -->
+    <polyline points="86,340 258,280 430,220 602,160 774,100 946,40 1118,0"
+              stroke="#E8B84A" stroke-width="3" fill="none" stroke-dasharray="8,8" opacity="0.5"/>
+
+    <!-- Dots at each step -->
+    <circle cx="86" cy="340" r="6" fill="#2A4A7F"/>
+    <circle cx="258" cy="280" r="6" fill="#2E5599"/>
+    <circle cx="430" cy="220" r="6" fill="#3563B0"/>
+    <circle cx="602" cy="160" r="6" fill="#3E72C4"/>
+    <circle cx="774" cy="100" r="6" fill="#4880D4"/>
+    <circle cx="946" cy="40" r="6" fill="#5A90E0"/>
+    <circle cx="1118" cy="0" r="8" fill="#E8B84A" filter="url(#subtleGlow)"/>
+  </g>
+
+  <!-- Divider -->
+  <rect x="120" y="1580" width="1360" height="1" fill="#4B7BF5" opacity="0.15"/>
+
+  <!-- Feature bullets -->
+  <g fill="#8AA0C0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="34" font-weight="400">
+    <text x="800" y="1680" text-anchor="middle" letter-spacing="2">Prompt Engineering  ·  Websites  ·  Applications</text>
+    <text x="800" y="1740" text-anchor="middle" letter-spacing="2">Automation  ·  AI Agents  ·  Business</text>
+  </g>
+
+  <!-- Description box -->
+  <rect x="200" y="1830" width="1200" height="260" rx="12" fill="#111D30" stroke="#1E3050" stroke-width="1.5"/>
+  <g fill="#94A8C4" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="30" font-weight="400" text-anchor="middle">
+    <text x="800" y="1895">The step-by-step guide to mastering Claude AI.</text>
+    <text x="800" y="1945">Build websites, applications, and automations</text>
+    <text x="800" y="1995">without writing a single line of code.</text>
+    <text x="800" y="2055" fill="#7B8DA4" font-size="26" font-style="italic">No coding experience required.</text>
+  </g>
+
+  <!-- Bottom section -->
+  <rect x="120" y="2200" width="1360" height="1" fill="#4B7BF5" opacity="0.15"/>
+
+  <!-- Based on / Credit -->
+  <text x="800" y="2300" text-anchor="middle" fill="#5A7090" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="28" font-weight="400" letter-spacing="1">Based on the training by</text>
+  <text x="800" y="2355" text-anchor="middle" fill="#8AA0C0" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="36" font-weight="600" letter-spacing="2">YASSINE SDIRI</text>
+
+  <!-- Year badge -->
+  <rect x="690" y="2410" width="220" height="50" rx="25" fill="none" stroke="#E8B84A" stroke-width="1.5" opacity="0.6"/>
+  <text x="800" y="2444" text-anchor="middle" fill="#E8B84A" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="26" font-weight="500" letter-spacing="6" opacity="0.8">2026</text>
+
+  <!-- Bottom decorative line -->
+  <rect x="120" y="2500" width="1360" height="2" fill="#4B7BF5" opacity="0.2"/>
+</svg>
