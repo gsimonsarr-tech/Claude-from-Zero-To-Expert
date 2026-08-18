@@ -57,8 +57,7 @@
 
 | Resource | Link | Description |
 |----------|------|-------------|
-| **Full Training Video** | [YouTube](https://www.youtube.com/watch?v=oS1RvuLPGbA) | 6-hour Claude training by Yassine Sdiri |
-| **Yassine Sdiri's Channel** | [YouTube](https://www.youtube.com/@yassine-sdiri) | More AI tutorials and content |
+| **Full Training Video** | [YouTube](https://www.youtube.com/watch?v=oS1RvuLPGbA) | 6-hour Claude training companion |
 | **AI Community (Skool)** | [skool.com/intelligenceartificielle](https://www.skool.com/intelligenceartificielle) | 52,000+ AI entrepreneurs community |
 | **Claude Design Guide** | [YouTube](https://www.youtube.com/watch?v=kpG1v9uZd4E) | Claude Design mastery in 20 minutes |
 
@@ -128,7 +127,7 @@ Quick links to each section of the original 6-hour training:
 
 | Video | Creator | Duration | Link |
 |-------|---------|----------|------|
-| Tout Comprendre sur Claude IA en 22 Minutes | Yassine Sdiri | 22 min | [Watch](https://www.youtube.com/watch?v=-50BGEYgMr4) |
+| Tout Comprendre sur Claude IA en 22 Minutes | Gabriel S. Sarr | 22 min | [Watch](https://www.youtube.com/watch?v=-50BGEYgMr4) |
 | Maîtriser CLAUDE CODE en 1 HEURE | ViDev | 1h 25min | [Watch](https://www.youtube.com/watch?v=KtPAAOzn128) |
 | Claude Code: le guide complet pour les non-devs | Shubham SHARMA | 1h 03min | [Watch](https://www.youtube.com/watch?v=_pW-kUBo7AU) |
 | Claude IA: le tutoriel facile pour débutant | Ludo Salenne | 44 min | [Watch](https://www.youtube.com/watch?v=nHXND_R4Jy8) |
@@ -162,7 +161,7 @@ Quick links to each section of the original 6-hour training:
 
 ## Support & Community
 
-- **Yassine Sdiri's Community**: [Skool](https://www.skool.com/intelligenceartificielle) — 52,000+ members
+- **AI Community**: [Skool](https://www.skool.com/intelligenceartificielle) — 52,000+ members
 - **Anthropic Support**: [support.anthropic.com](https://support.anthropic.com)
 - **Claude Status Page**: [status.anthropic.com](https://status.anthropic.com)
 - **GitHub Issues**: For Claude Code bugs and feature requests

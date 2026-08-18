@@ -2,7 +2,7 @@
 
 ## The Complete Guide to Mastering Claude AI
 
-*Based on Yassine Sdiri's 6-Hour Training*
+*Edited by Gabriel S. Sarr*
 
 ---
 
@@ -12,9 +12,7 @@ The step-by-step guide to mastering Claude AI. Build websites, applications, and
 
 ---
 
-*Original Training: "Deviens un Expert IA avec Claude en 2026 (FORMATION 6 HEURES)" by Yassine Sdiri*
-
-*Video: youtube.com/watch?v=oS1RvuLPGbA*
+*Companion Video: youtube.com/watch?v=oS1RvuLPGbA*
 
 \newpage
 
@@ -811,10 +809,9 @@ Watch the full training: youtube.com/watch?v=oS1RvuLPGbA
 
 ## Credits
 
-- **Original Training**: Yassine Sdiri — "Deviens un Expert IA avec Claude en 2026"
-- **Video**: youtube.com/watch?v=oS1RvuLPGbA
+- **Edited by**: Gabriel S. Sarr
+- **Companion Video**: youtube.com/watch?v=oS1RvuLPGbA
 - **Community**: skool.com/intelligenceartificielle (52,000+ members)
-- **Channel**: youtube.com/@yassine-sdiri
 
 ---
 
