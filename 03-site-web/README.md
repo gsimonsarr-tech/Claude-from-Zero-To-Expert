@@ -195,7 +195,6 @@ The video mentions [Paperclip](https://paperclip.ing/) as an option for building
 3. Claude-powered AI builds it for you
 4. Deploy with included hosting
 
-**Tip**: Check [Hostinger](https://www.hostinger.com) for affordable professional hosting options.
 
 ---
 
